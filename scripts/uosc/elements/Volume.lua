@@ -215,8 +215,7 @@ function Volume:destroy()
 end
 
 function Volume:get_visibility()
-	return self.slider.pressed and 1 or Elements:maybe('timeline', 'get_is_hovered') and -1
-		or Element.get_visibility(self)
+	return 0
 end
 
 function Volume:update_dimensions()
